@@ -1,0 +1,49 @@
+<!-- <div class="container-fluid">
+  <div class="row">
+    <div class="col-md-2"> -->
+      <!--Sidebar content-->
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="text-center"">
+      <p>
+        Search:
+        <input ng-model="$ctrl.query" />
+      </p>
+
+      <p>
+        Sort by:
+        <select ng-model="$ctrl.orderProp">
+          <option value="name">Alphabetical</option>
+          <option value="age">Newest</option>
+        </select>
+      </p>
+      </div> 
+  </div>   
+</div>
+
+    <!-- </div>
+    <div class="col-md-10"> -->
+      <!--Body content-->
+
+     <!-- This is the coffees view -->
+
+
+<table class="table table-striped table-hover table-bordered" border="1" cellpadding="5" cellspacing="5">
+  <tr>
+    <th>Reviews</th>
+    <th>Brand</th>
+    <th>Coffee Title</th>
+    <th>Country</th>
+  </tr>
+  <tr ng-repeat="coffee in $ctrl.coffees | filter:$ctrl.query | orderBy:$ctrl.orderProp">
+    <td><a href="#!/coffees/{{coffee.id}}">Reviews</a></td>
+    <td>{{coffee.brand}}</td>
+    <td>{{coffee.name}}</td>
+    <td>{{coffee.country}}</td>
+  </tr>
+</table>
+
+ <!--    </div>
+  </div>
+</div> -->

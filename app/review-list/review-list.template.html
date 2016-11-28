@@ -1,0 +1,26 @@
+<div ng-repeat="coffee in $ctrl.coffees | filter: {id: $ctrl.coffeeId}">
+
+    <h4 class="centerMe">Reviews for {{coffee.brand}} {{coffee.name}}</h4>
+      <div class="coffees">
+        <table class="table table-striped table-hover table-bordered" border="1" cellpadding="5" cellspacing="5">
+        <tr>
+          <th>Reviewer:</th>
+          <th>Comments:</th>
+          <th>Rating:</th>
+        </tr>
+          <tr ng-repeat="review in coffee.reviews">
+              <td>{{review.reviewer}}</td>
+              <td>{{review.comment}}</td>
+              <td>{{review.rating}}</td>
+          </tr>
+        </table>
+    </div>
+</div>
+
+
+<img src="https://genesistransformation.files.wordpress.com/2014/11/coffee.jpg" class="center-block img-rounded 	img-responsive reviewScaler" alt="Responsive image">
+
+<!-- <div ng-repeat="coffee in $ctrl.coffees | filter: {id: $ctrl.coffeeId}">
+<h1>Reviews for {{coffee.brand}} {{coffee.name}}</h1>
+
+</div> -->
