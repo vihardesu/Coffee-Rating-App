@@ -1,4 +1,12 @@
-# `angular-seed` — the seed for AngularJS apps
+This is a simple AngularJS App I created in a course I took at university, CSE 330: Creative and Rapid Prototype Development.
+
+The app dynamically parses data and stores ratings for coffee bean roasts. 
+
+I used a basic Angular JS Skeleton and the information for it can be found below.
+
+------------------------------------------------------------------------------------------------------------------------
+
+#`angular-seed` — the seed for AngularJS apps
 
 This project is an application skeleton for a typical [AngularJS][angularjs] web app. You can use it
 to quickly bootstrap your angular webapp projects and dev environment for these projects.
